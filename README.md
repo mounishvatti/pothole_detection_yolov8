@@ -14,14 +14,17 @@ The google colab file link for yolov8 segmentation and tracking is provided belo
 ## Steps to run Code
 
 <h2>- Clone the repository</h2>
+
 ```
 !git clone https://github.com/mounishvatti/pothole_detection_yolov8.git
 ```
 <h2>- Goto the cloned folder</h2>
+
 ```
 cd pothole_detection_yolov8
 ```
 <h2>- Install the Dependencies</h2>
+
 ```
 !pip install ultralytics
 ```
@@ -33,25 +36,28 @@ cd pothole_detection_yolov8
 ```
 
 <h2>- Downloading the Datasets From The Google Drive</h2> 
+
 ```
 ['Pothole Detection Dataset'](https://drive.google.com/drive/folders/1Bt1ghpewGpPnX696u-TEHaUCrH85AKtw)
 ```
 <h2>- Downloading a Demo Video from the Google Drive</h2>
-- Demo Video 
+
+Demo Video 
 ```
 gdown "https://drive.google.com/file/d/1xDzURxmF6OWQWc2RIkn_0PbSFZOqhnY8/view?usp=drive_link"
 ```
+<h2>My roboflow workspace containing the pothole dataset</h2>
 
-- Run the code with mentioned command below.
+['Roboflow Workspace'](https://app.roboflow.com/vit-76kid/pothole-detection-project-3yiqt/1)
+
+Run the code with mentioned command below.
 - For training the data
 ```
 !yolo task=detect mode=train model=yolov8m.pt data={dataset.location}/data.yaml epochs={number of epochs} imgsz=640
-
 ```
 - For yolov8 segmentation + Tracking & prediction
 ```
 !yolo task=detect mode=predict model={HOME}/runs/detect/train/weights/best.pt conf=0.25 source='/content/drive/MyDrive/demo.mp4'
-
 ```
 
 ### RESULTS
