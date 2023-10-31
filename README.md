@@ -1,5 +1,4 @@
-<H1 align="center">
-YOLOv8 Image Segmentation & Pothole Detection</H1>
+<H1 align="center">YOLOv8 Image Segmentation & Pothole Detection</H1>
 
 ## Google Colab File Link (A Single Click Solution)
 The google colab file link for yolov8 segmentation and tracking is provided below, you can check the implementation in Google Colab, and its a single click implementation
@@ -9,9 +8,6 @@ The google colab file link for yolov8 segmentation and tracking is provided belo
 
 
 ## Object Segmentation and Tracking (ID + Trails)  using YOLOv8 on Custom Data
-
-
-## Steps to run Code
 
 <h2>Clone the repository</h2>
 
@@ -56,7 +52,7 @@ gdown "https://drive.google.com/file/d/1xDzURxmF6OWQWc2RIkn_0PbSFZOqhnY8/view?us
 ```
 <h2>My roboflow workspace containing the pothole dataset</h2>
 
-['Roboflow Workspace'](https://app.roboflow.com/vit-76kid/pothole-detection-project-3yiqt/1)
+[`Roboflow Workspace`](https://app.roboflow.com/vit-76kid/pothole-detection-project-3yiqt/1)
 
 Run the code with mentioned command below.
 - For training the data
@@ -68,4 +64,3 @@ Run the code with mentioned command below.
 !yolo task=detect mode=predict model={HOME}/runs/detect/train/weights/best.pt conf=0.25 source='/content/drive/MyDrive/demo.mp4'
 ```
 
-### RESULTS
