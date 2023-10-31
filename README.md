@@ -13,17 +13,17 @@ The google colab file link for yolov8 segmentation and tracking is provided belo
 
 ## Steps to run Code
 
-<h2>- Clone the repository</h2>
+<h2>Clone the repository</h2>
 
 ```
 !git clone https://github.com/mounishvatti/pothole_detection_yolov8.git
 ```
-<h2>- Goto the cloned folder</h2>
+<h2>Goto the cloned folder</h2>
 
 ```
 cd pothole_detection_yolov8
 ```
-<h2>- Install the Dependencies</h2>
+<h2>Install the Dependencies</h2>
 
 ```
 !pip install ultralytics
@@ -34,13 +34,21 @@ cd pothole_detection_yolov8
 ```
 !pip install fastapi kaleido python_multipart uvicorn
 ```
+<h2>Importing YOLO and a roboflow workspace for Object Detection</h2>
 
-<h2>- Downloading the Datasets From The Google Drive</h2> 
+```
+from roboflow import Roboflow
+rf = Roboflow(api_key="{the api key}")
+project = rf.workspace("{name of workspace}").project("object-detection-bounding-box-ftfs5")
+dataset = project.version(1).download("yolov5")
+```
+
+<h2>Downloading the Datasets From The Google Drive</h2> 
 
 ```
 ['Pothole Detection Dataset'](https://drive.google.com/drive/folders/1Bt1ghpewGpPnX696u-TEHaUCrH85AKtw)
 ```
-<h2>- Downloading a Demo Video from the Google Drive</h2>
+<h2>Downloading a Demo Video from the Google Drive</h2>
 
 Demo Video 
 ```
