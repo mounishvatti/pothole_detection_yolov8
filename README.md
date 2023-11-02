@@ -45,8 +45,6 @@ dataset = project.version(1).download("yolov5")
 
 <h2>Downloading a Demo Video from the Google Drive</h2>
 
-Demo Video 
-
 [`Demo Video`](https://drive.google.com/file/d/1xDzURxmF6OWQWc2RIkn_0PbSFZOqhnY8/view?usp=drive_link)
 
 <h2>My roboflow workspace containing the pothole dataset</h2>
