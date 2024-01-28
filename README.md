@@ -1,6 +1,6 @@
 <img width="1393" alt="Screenshot 2024-01-28 at 4 41 26 PM" src="https://github.com/mounishvatti/pothole_detection_yolov8/assets/76279858/bcdd3983-bd45-4f48-a598-24750c3f7af1">
 
-<H1 align="center">YOLOv8 Image Segmentation & Pothole Detection</H1>
+<H1 align="center">Image Segmentation & Pothole Detection</H1>
 
 ## Google Colab File Link (A Single Click Solution)
 The google colab file link for yolov8 segmentation and tracking is provided below, you can check the implementation in Google Colab, and its a single click implementation
