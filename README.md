@@ -2,6 +2,10 @@
 
 <H1 align="center">Image Segmentation & Pothole Detection</H1>
 
+Firstly I'd like to thank Respected [Jagan Mohan Reddy](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmail.teluguwishesh.com%2F190-andhra-headlines-flash-news%2F92168-ap-cm-ys-jagan-takes-a-nap-in-assembly-during-hot-debate-on-capital.html&psig=AOvVaw2KdWUaqEwDuEjsCPJFhmWA&ust=1708277670999000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCNjalrD0soQDFQAAAAAdAAAAABAE) - (CM AP) for not covering up the potholes in Andhra Pradesh as most of my data was collected from that state.
+- More data -> More Epochs -> Better Accuracy -> Better Prediction
+
+
 ## Google Colab File Link (A Single Click Solution)
 The google colab file link for yolov8 segmentation and tracking is provided below, you can check the implementation in Google Colab, and its a single click implementation
 ,you just need to select the Run Time as GPU, and click on Run All.
