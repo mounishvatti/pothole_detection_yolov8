@@ -20,32 +20,32 @@ The google colab file link for yolov8 segmentation and tracking is provided belo
 
 <h2>Clone the repository</h2>
 
-```
+```bash
 !git clone https://github.com/mounishvatti/pothole_detection_yolov8.git
 ```
 <h2>Goto the cloned folder</h2>
 
-```
+```bash
 cd pothole_detection_yolov8
 ```
 <h2>Install the Dependencies</h2>
 
-```
+```bash
 !pip install ultralytics
 ```
-```
+```bash
 !pip install roboflow
 ```
-```
+```bash
 !pip install fastapi kaleido python_multipart uvicorn
 ```
 <h2>Importing YOLO and a roboflow workspace for Object Detection</h2>
 
-```
+```python
 from roboflow import Roboflow
 rf = Roboflow(api_key="{the api key}")
 project = rf.workspace("{name of workspace}").project("object-detection-bounding-box-ftfs5")
-dataset = project.version(1).download("yolov5")
+dataset = project.version(1).download("yolov8")
 ```
 
 <h2>Downloading the Datasets From The Google Drive</h2> 
@@ -62,11 +62,11 @@ dataset = project.version(1).download("yolov5")
 
 Run the code with mentioned command below.
 - For training the data
-```
+```python
 !yolo task=detect mode=train model=yolov8m.pt data={dataset.location}/data.yaml epochs={number of epochs} imgsz=640
 ```
 - For yolov8 segmentation + Tracking & prediction
-```
+```python
 !yolo task=detect mode=predict model={HOME}/runs/detect/train/weights/best.pt conf=0.25 source='/content/drive/MyDrive/demo.mp4'
 ```
 
