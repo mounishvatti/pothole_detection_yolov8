@@ -37,22 +37,25 @@ cd pothole_detection_yolov8
 ```bash
 !pip install fastapi kaleido python_multipart uvicorn
 ```
-<h2>Importing YOLO and a roboflow workspace for Object Detection</h2>
+<h2>Importing YOLO and a roboflow workspace for Image Segmentation</h2>
 
 ```python
 from roboflow import Roboflow
 rf = Roboflow(api_key="{the api key}")
-project = rf.workspace("{name of workspace}").project("object-detection-bounding-box-ftfs5")
+project = rf.workspace("{name of workspace}").project("name-of-project")
 dataset = project.version(1).download("yolov8")
 ```
 
+> [!NOTE]
+> If you are unable to perform the commands after importing the dataset from roboflow, you can access the same dataset from the drive link provided below, download it, upload it to your personal drive and mount the drive to your Google Colab 
+
 <h2>Downloading the Datasets From The Google Drive</h2> 
 
-[`Pothole Detection Dataset`](https://drive.google.com/drive/folders/1Bt1ghpewGpPnX696u-TEHaUCrH85AKtw)
+[`Pothole Detection Dataset`](https://drive.google.com/drive/folders/18urMqJeUwPiVzsZ1HjwVBstzEyDLqmC4?usp=sharing)
 
-<h2>Downloading a Demo Video from the Google Drive</h2>
+<h2>Downloading the Potholes on a Road Video from the Google Drive</h2>
 
-[`Demo Video`](https://drive.google.com/file/d/1xDzURxmF6OWQWc2RIkn_0PbSFZOqhnY8/view?usp=drive_link)
+[`Potholes on Road Video`](https://drive.google.com/file/d/1MxNWhRhbAxFjY6S0iz8UsqYNZhiVePH_/view?usp=sharing)
 
 <h2>My roboflow workspace containing the pothole dataset</h2>
 
