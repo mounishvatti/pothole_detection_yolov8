@@ -47,8 +47,6 @@ dataset = project.version(1).download("yolov8")
 > [!NOTE]
 > If you are unable to perform the commands after importing the dataset from roboflow, you can access the same dataset by downloading it, upload it to your personal drive and mount the drive to your Google Colab 
 
-<h2>Downloading the Potholes on a Road Video from the Google Drive</h2>
-
 <h2>My roboflow workspace containing the pothole dataset</h2>
 
 [`Roboflow Workspace`](https://app.roboflow.com/vit-76kid/pothole-detection-project-3yiqt/1)
